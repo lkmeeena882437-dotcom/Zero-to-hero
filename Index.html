@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Jiga Bhai | Zero To Hero Trading</title>
+
+  <!-- Google Fonts: Poppins (Marketers' Favorite Font) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
+
+  <!-- ========================================== -->
+  <!-- 🟢 META PIXEL TRACKING CODE 🟢 -->
+  <!-- ========================================== -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    // TERA PIXEL ID 
+    fbq('init', '982667030923373'); 
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=982667030923373&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- ========================================== -->
+
+  <style>
+    :root {
+      --bg-dark: #0f1115;
+      --bg-light: #181b21;
+      --brand-yellow: #ffcc00;
+      --brand-red: #ff3333;
+      --brand-green: #00e676;
+      --text-white: #ffffff;
+      --text-gray: #b0b5bf;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-white);
+      line-height: 1.6;
+      padding-bottom: 90px; /* Space for sticky button */
+    }
+
+    /* Top Scarcity Bar */
+    .top-bar {
+      background-color: var(--brand-red);
+      color: #fff;
+      text-align: center;
+      padding: 10px 5px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      animation: flashbg 2s infinite;
+    }
+
+    @keyframes flashbg {
+      0%, 100% { background-color: #d30000; }
+      50% { background-color: #ff0000; }
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Hero Section */
+    .hero-title {
+      font-size: 28px;
+      font-weight: 900;
+      text-align: center;
+      line-height: 1.2;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .hero-title span {
+      color: var(--brand-yellow);
+    }
+
+    .sub-headline {
+      text-align: center;
+      font-size: 15px;
+      color: var(--text-gray);
+      margin-bottom: 25px;
+    }
+
+    /* Video/Image Placeholder */
+    .video-box {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800') center/cover;
+      border-radius: 12px;
+      border: 3px solid var(--brand-yellow);
+      margin-bottom: 25px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 30px rgba(255, 204, 0, 0.2);
+    }
+
+    .video-box::after {
+      content: '▶';
+      font-size: 40px;
+      color: var(--brand-yellow);
+      background: rgba(0,0,0,0.6);
+      width: 70px; height: 70px;
+      display: flex; justify-content: center; align-items: center;
+      border-radius: 50%;
+      border: 3px solid var(--brand-yellow);
+    }
+
+    /* Main CTA Buttons */
+    .cta-btn {
+      display: block;
+      width: 100%;
+      background: linear-gradient(to bottom, #ffe600, #ffcc00);
+      color: #000;
+      text-align: center;
+      padding: 18px;
+      font-size: 18px;
+      font-weight: 900;
+      text-transform: uppercase;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(255, 204, 0, 0.4);
+      transform: scale(1);
+      animation: pulse-btn 2s infinite;
+      margin-bottom: 15px;
+    }
+
+    @keyframes pulse-btn {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .cta-sub {
+      text-align: center;
+      font-size: 12px;
+      color: var(--brand-green);
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    /* Pain Points Section */
+    .section-box {
+      background-color: var(--bg-light);
+      padding: 25px 20px;
+      border-radius: 16px;
+      border: 1px solid #2a2e38;
+      margin-bottom: 30px;
+    }
+
+    .section-heading {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .pain-list, .benefit-list {
+      list-style: none;
+    }
+
+    .pain-list li {
+      font-size: 15px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .pain-list li::before {
+      content: '❌';
+      color: var(--brand-red);
+      font-size: 16px;
+    }
+
+    .benefit-list li {
+      font-size: 15px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-weight: 600;
+    }
+
+    .benefit-list li::before {
+      content: '✅';
+      font-size: 16px;
+    }
+
+    /* Pricing / Value Section */
+    .pricing-box {
+      text-align: center;
+      border: 2px dashed var(--brand-yellow);
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: var(--brand-red);
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .new-price {
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--brand-green);
+      margin: 5px 0;
+    }
+
+    /* Sticky Footer CTA (Channel Link) */
+    .sticky-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(15, 17, 21, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 15px 20px;
+      border-top: 1px solid #333;
+      z-index: 1000;
+      text-align: center;
+    }
+
+    .sticky-cta .cta-btn {
+      margin-bottom: 5px;
+      padding: 14px;
+      font-size: 16px;
+    }
+
+    /* Floating Support Bot (Shifted UP so it doesn't hide behind sticky CTA) */
+    .support-float {
+      position: fixed;
+      bottom: 95px; 
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+      z-index: 999;
+      border: 2px solid var(--bg-dark);
+    }
+
+    .support-float svg {
+      width: 26px;
+      fill: #000;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Top Scarcity Bar -->
+  <div class="top-bar">
+    ⚠️ ATTENTION: Only 5 FREE VIP Spots Left Today!
+  </div>
+
+  <div class="container">
+    
+    <!-- Hero Section -->
+    <h1 class="hero-title">From Loss Making to <br><span>Consistent Profit Maker</span> in Options Trading</h1>
+    <p class="sub-headline">Discover the secret Nifty & BankNifty setups that top 1% traders use to capture big moves every day.</p>
+
+    <!-- Video/Image Box -->
+    <div class="video-box"></div>
+
+    <!-- MAIN CHANNEL BUTTON 1 -->
+    <a href="https://t.me/+4oN8IsDUF1FhNjY1" class="cta-btn lead-btn" target="_blank" rel="noopener">
+      👉 JOIN PRIVATE CHANNEL NOW
+    </a>
+    <p class="cta-sub">Free Lifetime Access • 156+ Traders Joined Today</p>
+
+    <!-- Pain Points (Dard) -->
+    <div class="section-box">
+      <h2 class="section-heading">Are You Facing These Issues? 📉</h2>
+      <ul class="pain-list">
+        <li>Taking trades on random Telegram tips and losing capital?</li>
+        <li>Making profit in 4 days but wiping it out in 1 single day?</li>
+        <li>Holding losing trades in hope, but exiting winning trades early?</li>
+        <li>Confused about when to enter and where to put Stop Loss?</li>
+      </ul>
+    </div>
+
+    <!-- The Solution (Fayde) -->
+    <div class="section-box" style="border-color: var(--brand-green);">
+      <h2 class="section-heading" style="color: var(--brand-green);">Here Is What You Get Inside 🏆</h2>
+      <ul class="benefit-list">
+        <li>Daily High-Accuracy Nifty & BankNifty Setup Levels</li>
+        <li>Proper Entry, Exact Stop Loss & Big Target Points</li>
+        <li>Live Market Updates & Psychology Support</li>
+        <li>Deep Logic Behind Every Chart (Learn while you earn)</li>
+      </ul>
+    </div>
+
+    <!-- Offer Pricing -->
+    <div class="pricing-box">
+      <p style="font-weight: 600; color: #fff;">Real Value of this Mentorship:</p>
+      <p class="old-price">₹ 9,999/Year</p>
+      <p class="new-price">ABSOLUTELY FREE</p>
+      <p style="font-size: 12px; color: var(--text-gray);">(Offer valid only for the next 24 Hours)</p>
+    </div>
+
+    <div style="text-align: center; margin-bottom: 30px;">
+      <p style="color: #888; font-size: 12px;">© 2024 Jiga Bhai Trading. Not SEBI Registered. For Educational Purposes Only.</p>
+    </div>
+
+  </div>
+
+  <!-- FLOATING SUPPORT BOT BUTTON (Shifted slightly up) -->
+  <a href="https://t.me/Jiga_Bhai_Gujrati_Trader_bot" class="support-float" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+  </a>
+
+  <!-- STICKY BOTTOM BUTTON (MAIN CHANNEL BUTTON 2) -->
+  <div class="sticky-cta">
+    <a href="https://t.me/+4oN8IsDUF1FhNjY1" class="cta-btn lead-btn" target="_blank" rel="noopener">
+      🚀 GET FREE VIP ACCESS
+    </a>
+    <p style="font-size: 11px; color: #fff;">Spots filling fast! Offer closes soon.</p>
+  </div>
+
+  <script>
+    // ==========================================
+    // 🟢 BUTTON CLICK LEAD TRACKING 🟢
+    // ==========================================
+    // Ye code sirf "Channel Join" buttons par Lead count karega (Bot wale pe nahi)
+    const buttons = document.querySelectorAll('.lead-btn');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', function() {
+        fbq('track', 'Lead'); 
+        console.log("Pixel Lead Fired to 982667030923373");
+      });
+    });
+  </script>
+
+</body>
+</html>
