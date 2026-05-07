@@ -1,108 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trading Learning</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiga Bhai Trading Academy</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 
-<!-- ✅ META PIXEL -->
-<script>
-!function(f,b,e,v,n,t,s){
-if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)
-}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    <script>
+    !function(f,b,e,v,n,t,s){
+    if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)
+    }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '982667030923373'); 
-fbq('track', 'PageView');
-</script>
+    fbq('init', '982667030923373'); 
+    fbq('track', 'PageView');
+    </script>
 
-<style>
-body {
-  margin:0;
-  font-family:Poppins;
-  background:#0f1115;
-  color:white;
-  text-align:center;
-}
+    <style>
+        body { margin:0; font-family: 'Poppins', sans-serif; background:#0f1115; color:white; text-align:center; padding-bottom: 20px; }
+        .container { padding:40px 20px; }
+        .logo-text { font-size: 14px; letter-spacing: 2px; color: #888; text-transform: uppercase; margin-bottom: 10px; }
+        h1 { font-size:28px; font-weight:800; line-height: 1.2; margin-bottom: 5px; }
+        span { color:#ffcc00; }
+        .highlight-box { background: #1e222a; padding: 15px; border-radius: 15px; margin: 20px auto; max-width: 400px; border: 1px solid #333; }
+        .highlight-box p { margin: 5px 0; font-size: 14px; color: #ccc; }
+        
+        .btn-main { background:#ffcc00; color:black; padding:18px; display:block; border-radius:50px; margin:25px auto 10px auto; max-width:320px; text-decoration:none; font-weight:700; font-size: 18px; transition: 0.3s; box-shadow: 0px 10px 20px rgba(255, 204, 0, 0.2); }
+        .btn-main:hover { transform: scale(1.05); }
 
-.container { padding:20px; }
+        .btn-support { background:transparent; color:#ffcc00; padding:12px; display:block; border-radius:50px; margin:10px auto; max-width:280px; text-decoration:none; font-weight:600; font-size: 14px; border: 1px solid #ffcc00; transition: 0.3s; }
+        .btn-support:hover { background: rgba(255, 204, 0, 0.1); }
 
-h1 { font-size:26px; font-weight:800; }
-span { color:#ffcc00; }
+        .popup { display:none; position:fixed; bottom:0; left: 0; right: 0; width:100%; background:#1c2029; padding:30px 20px; border-top-left-radius:30px; border-top-right-radius:30px; box-shadow: 0px -10px 30px rgba(0,0,0,0.5); z-index: 1000; }
+        .popup input { width: 85%; max-width: 350px; padding: 15px; margin: 10px 0; border-radius: 12px; border: 1px solid #333; background: #0f1115; color: white; font-size: 16px; }
+        .close-btn { color: #888; font-size: 12px; text-decoration: underline; cursor: pointer; margin-top: 10px; display: block; }
 
-.btn {
-  background:#ffcc00;
-  color:black;
-  padding:15px;
-  display:block;
-  border-radius:30px;
-  margin:15px auto;
-  max-width:300px;
-  text-decoration:none;
-  font-weight:700;
-}
-
-.popup {
-  display:none;
-  position:fixed;
-  bottom:0;
-  width:100%;
-  background:#181b21;
-  padding:20px;
-  border-top-left-radius:20px;
-  border-top-right-radius:20px;
-}
-
-.popup input {
-  width:90%;
-  padding:10px;
-  margin:10px;
-  border-radius:10px;
-  border:none;
-}
-
-</style>
+        /* ✅ Chota aur Clean Disclaimer */
+        .disclaimer-small { font-size: 10px; color: #444; max-width: 500px; margin: 40px auto 10px auto; padding: 0 20px; line-height: 1.4; border-top: 1px solid #222; pt: 10px; }
+    </style>
 </head>
 
 <body>
 
 <div class="container">
+    <div class="logo-text">Jiga Bhai Trading Academy</div>
+    <h1>Master The Art of <br><span>Market Analysis</span></h1>
 
-<h1>Improve Your <span>Trading Skills</span></h1>
+    <div class="highlight-box">
+        <p>✅ Nifty & BankNifty Setup Study</p>
+        <p>✅ Deep Logic Behind Charts</p>
+        <p>✅ Risk Management Strategy</p>
+    </div>
 
-<p>
-Learn trading with proper risk management.<br>
-Educational purpose only. No guaranteed returns.
-</p>
+    <p style="color: #aaa; font-size: 14px;">Learn the logic behind every move.</p>
 
-<a href="#" class="btn" onclick="openFunnel()">Start Learning</a>
-
+    <a href="javascript:void(0)" class="btn-main" onclick="openFunnel()">Join Private Channel</a>
+    <a href="https://t.me/Jiga_Bhai_Gujrati_Trader_bot" target="_blank" class="btn-support">💬 Support Bot</a>
 </div>
 
-<!-- ✅ FUNNEL POPUP -->
 <div class="popup" id="funnel">
-  <h3>Enter Details to Continue</h3>
+    <h3>Unlock Private Access</h3>
+    <p style="font-size: 13px; color: #888; margin-bottom: 15px;">Get your invite link below</p>
+    <input type="text" id="userName" placeholder="Your Name">
+    <input type="tel" id="userPhone" placeholder="Mobile Number">
+    <a href="https://t.me/+Qpxg4nO9pQ01MzE1" class="btn-main" onclick="trackLead()" style="margin-top: 15px;">Get Channel Link</a>
+    <span class="close-btn" onclick="closeFunnel()">Go Back</span>
+</div>
 
-  <input type="text" placeholder="Your Name"><br>
-  <input type="tel" placeholder="Mobile Number"><br>
-
-  <a href="https://t.me/+4oN8IsDUF1FhNjY1" class="btn" onclick="trackLead()">Continue</a>
+<div class="disclaimer-small">
+    <strong>DISCLAIMER:</strong> Not SEBI Registered. All content is for educational purposes only. Trading involves market risk. No tips or guaranteed profits are provided.
 </div>
 
 <script>
-function openFunnel(){
-  document.getElementById("funnel").style.display="block";
-}
-
-function trackLead(){
-  fbq('track', 'Lead');
-}
+function openFunnel(){ document.getElementById("funnel").style.display="block"; }
+function closeFunnel(){ document.getElementById("funnel").style.display="none"; }
+function trackLead(){ fbq('track', 'Lead'); }
 </script>
 
 </body>
