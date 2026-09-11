@@ -1,35 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="gu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Trading Floor | Official Telegram Channel</title>
+    <title>Learning With ગુજરાતી વેપારી | Official Telegram Channel</title>
     
     <!-- Meta Domain Verification (Meta Business Manager -> Brand Safety & Domains) -->
-    <!-- Replace the content value below with your Facebook Domain Verification code if provided by Meta -->
     <meta name="facebook-domain-verification" content="ENTER_YOUR_FACEBOOK_DOMAIN_VERIFICATION_CODE_HERE" />
     <meta name="google-site-verification" content="ENTER_YOUR_GOOGLE_VERIFICATION_CODE_HERE" />
 
     <!-- Meta SEO & Compliance -->
-    <meta name="description" content="Join the official channel of Trading Floor for daily market analysis, trade setups & expert insights — delivered straight to you, first and always.">
-    <meta name="keywords" content="Trading Floor, Index Trades, Market Analysis, Stock Market Education, Chart Setups, Technical Research, Nifty, BankNifty">
-    <meta name="author" content="Trading Floor Academy">
+    <meta name="description" content="Join the official channel of Learning With ગુજરાતી વેપારી for daily market analysis, trade setups & expert insights — delivered straight to you, first and always.">
+    <meta name="keywords" content="Learning With ગુજરાતી વેપારી, Gujarati Vepari, Index Trades, Market Analysis, Stock Market Education, Chart Setups, Technical Research, Nifty, BankNifty">
+    <meta name="author" content="Learning With ગુજરાતી વેપારી">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph for Social Sharing & Meta Ads Previews -->
-    <meta property="og:title" content="Trading Floor | Official Telegram Channel">
-    <meta property="og:description" content="Join Trading Floor for daily index analysis, chart setups & educational market research — 100% free community.">
+    <meta property="og:title" content="Learning With ગુજરાતી વેપારી | Official Telegram Channel">
+    <meta property="og:description" content="Join Learning With ગુજરાતી વેપારી for daily index analysis, chart setups & educational market research — 100% free community.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tradingfloor.academy/">
-    <meta property="og:site_name" content="Trading Floor">
+    <meta property="og:site_name" content="Learning With ગુજરાતી વેપારી">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Trading Floor | Index Trades">
+    <meta name="twitter:title" content="Learning With ગુજરાતી વેપારી | Index Trades">
     <meta name="twitter:description" content="Free market analysis and chart setups. Pure technical research.">
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts (Noto Sans Gujarati, Outfit, Plus Jakarta Sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Meta / Facebook Pixel Code (Enhanced Lead & Event Tracking) -->
     <script>
@@ -47,10 +45,8 @@
     
     // Track PageView on Load
     fbq('track', 'PageView');
-
-    // Track ViewContent standard event for ad optimization
     fbq('track', 'ViewContent', {
-        content_name: 'Trading Floor Landing Page',
+        content_name: 'Learning With Gujarati Vepari Landing Page',
         content_category: 'Stock Market Education & Research',
         content_type: 'product'
     });
@@ -61,20 +57,24 @@
 
     <style>
         :root {
-            --bg-dark: #070a12;
-            --bg-card: #0a0f1b;
-            --bg-inner: #0f1626;
-            --accent-orange: #ff5e14;
-            --accent-orange-light: #fb923c;
-            --accent-orange-glow: rgba(255, 94, 20, 0.45);
-            --gold-accent: #f59e0b;
-            --gold-dim: #d97706;
+            --bg-deep: #070c18;
+            --bg-card: rgba(12, 20, 36, 0.92);
+            --bg-inner: #0f1c32;
+            --telegram-blue: #229ED9;
+            --telegram-dark: #0088CC;
+            --telegram-light: #2AABEE;
+            --telegram-glow: rgba(34, 158, 217, 0.45);
+            --gold-primary: #fbbf24;
+            --gold-bright: #ffd700;
             --text-white: #ffffff;
+            --text-light: #f1f5f9;
             --text-muted: #94a3b8;
             --text-dim: #64748b;
-            --border-orange: #ea580c;
+            --border-subtle: rgba(255, 255, 255, 0.08);
+            --border-glow: rgba(34, 158, 217, 0.25);
             --font-main: 'Plus Jakarta Sans', sans-serif;
             --font-heading: 'Outfit', sans-serif;
+            --font-gujarati: 'Noto Sans Gujarati', 'Outfit', sans-serif;
         }
 
         * {
@@ -84,11 +84,17 @@
             -webkit-tap-highlight-color: transparent;
         }
 
+        /* ========================================================
+           RESPONSIVE FINTECH HIGH-CONVERTING BACKGROUND
+           ======================================================== */
         body {
-            background-color: var(--bg-dark);
+            background-color: var(--bg-deep);
             background-image: 
-                radial-gradient(circle at 50% 22%, rgba(255, 94, 20, 0.16) 0%, rgba(7, 10, 18, 0) 65%),
-                radial-gradient(circle at 80% 85%, rgba(217, 119, 6, 0.08) 0%, rgba(7, 10, 18, 0) 50%);
+                radial-gradient(circle at 50% 12%, rgba(251, 191, 36, 0.12) 0%, transparent 45%),
+                radial-gradient(circle at 15% 45%, rgba(34, 158, 217, 0.14) 0%, transparent 50%),
+                radial-gradient(circle at 85% 65%, rgba(0, 136, 204, 0.12) 0%, transparent 55%),
+                linear-gradient(180deg, #070d1a 0%, #0a1426 50%, #060a14 100%);
+            background-attachment: fixed;
             color: var(--text-white);
             font-family: var(--font-main);
             min-height: 100vh;
@@ -98,10 +104,12 @@
             justify-content: center;
             position: relative;
             overflow-x: hidden;
-            padding: 24px 16px;
+            padding: 20px 14px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
-        /* Subtle starry / dot grid backdrop */
+        /* Clean subtle grid lines */
         body::before {
             content: '';
             position: fixed;
@@ -109,37 +117,42 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
-            background-size: 26px 26px;
+            background-image: 
+                linear-gradient(rgba(34, 158, 217, 0.035) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(34, 158, 217, 0.035) 1px, transparent 1px);
+            background-size: 28px 28px;
             pointer-events: none;
             z-index: 0;
-            opacity: 0.7;
         }
 
-        /* Main Viewport Card Frame */
+        /* Main Viewport Card Frame (Optimized for Mobile Meta Ads) */
         .landing-card {
             position: relative;
             width: 100%;
-            max-width: 440px;
-            background: rgba(9, 14, 25, 0.88);
-            backdrop-filter: blur(18px);
-            -webkit-backdrop-filter: blur(18px);
-            border: 1px solid rgba(255, 255, 255, 0.04);
+            max-width: 430px;
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border-subtle);
+            border-top: 1px solid rgba(251, 191, 36, 0.3);
             border-radius: 22px;
-            padding: 38px 24px 30px;
+            padding: 34px 22px 26px;
             z-index: 1;
-            box-shadow: 0 30px 70px rgba(0, 0, 0, 0.75), 0 0 40px rgba(255, 94, 20, 0.06);
+            box-shadow: 
+                0 25px 65px rgba(0, 0, 0, 0.8),
+                0 0 40px rgba(34, 158, 217, 0.08),
+                inset 0 1px 1px rgba(255, 255, 255, 0.15);
         }
 
-        /* 4 Glowing Golden-Orange Corner Accents */
+        /* 4 Aesthetic Minimalist Corner Accents */
         .corner {
             position: absolute;
-            width: 24px;
-            height: 24px;
+            width: 20px;
+            height: 20px;
             pointer-events: none;
-            border-color: rgba(217, 119, 6, 0.6);
+            border-color: rgba(251, 191, 36, 0.65);
             border-style: solid;
-            filter: drop-shadow(0 0 3px rgba(217, 119, 6, 0.4));
+            filter: drop-shadow(0 0 3px rgba(251, 191, 36, 0.4));
         }
         .corner-tl { top: 12px; left: 12px; border-width: 1.5px 0 0 1.5px; }
         .corner-tr { top: 12px; right: 12px; border-width: 1.5px 1.5px 0 0; }
@@ -151,21 +164,21 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
 
         .star-icon {
-            width: 18px;
-            height: 18px;
-            margin-bottom: 12px;
-            color: #d97706;
-            filter: drop-shadow(0 0 8px rgba(217, 119, 6, 0.7));
+            width: 16px;
+            height: 16px;
+            margin-bottom: 10px;
+            color: var(--gold-primary);
+            filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.7));
             animation: starTwinkle 3s infinite ease-in-out;
         }
 
         @keyframes starTwinkle {
             0%, 100% { transform: scale(1); opacity: 0.85; }
-            50% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 12px rgba(251, 146, 60, 0.9)); }
+            50% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 12px rgba(251, 191, 36, 0.95)); }
         }
 
         .banner-strip {
@@ -173,32 +186,33 @@
             align-items: center;
             justify-content: center;
             width: 100%;
-            gap: 12px;
+            gap: 10px;
         }
 
         .banner-line {
             flex: 1;
             height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(217, 119, 6, 0.5), transparent);
+            background: linear-gradient(90deg, transparent, rgba(251, 191, 36, 0.5), transparent);
         }
 
         .banner-text {
-            font-size: 11px;
+            font-size: 10.5px;
             font-weight: 700;
-            letter-spacing: 2.8px;
-            color: #d97706;
+            letter-spacing: 2.6px;
+            color: var(--gold-primary);
             text-transform: uppercase;
             white-space: nowrap;
+            text-shadow: 0 0 8px rgba(251, 191, 36, 0.3);
         }
 
         /* ========================================================
-           REALISTIC GLOWING PROFILE AVATAR & BADGE
+           REALISTIC GLOWING PROFILE AVATAR & BADGE (IMGBB SUPPORT)
            ======================================================== */
         .avatar-wrap {
             position: relative;
-            width: 142px;
-            height: 142px;
-            margin: 0 auto 24px;
+            width: 136px;
+            height: 136px;
+            margin: 0 auto 20px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -207,9 +221,9 @@
         /* Multi-layered Neon Radial Glow Pulse */
         .avatar-glow-outer {
             position: absolute;
-            width: 175px;
-            height: 175px;
-            background: radial-gradient(circle, rgba(255, 94, 20, 0.45) 0%, rgba(255, 94, 20, 0.15) 45%, rgba(7, 10, 18, 0) 70%);
+            width: 165px;
+            height: 165px;
+            background: radial-gradient(circle, rgba(34, 158, 217, 0.35) 0%, rgba(251, 191, 36, 0.15) 45%, transparent 70%);
             border-radius: 50%;
             z-index: 0;
             animation: pulseAura 3.5s infinite ease-in-out;
@@ -218,11 +232,11 @@
 
         .avatar-glow-ring {
             position: absolute;
-            width: 152px;
-            height: 152px;
+            width: 145px;
+            height: 145px;
             border-radius: 50%;
-            border: 1.5px solid rgba(255, 94, 20, 0.35);
-            box-shadow: 0 0 20px rgba(255, 94, 20, 0.3), inset 0 0 15px rgba(255, 94, 20, 0.15);
+            border: 1.5px solid rgba(251, 191, 36, 0.35);
+            box-shadow: 0 0 18px rgba(34, 158, 217, 0.3), inset 0 0 12px rgba(251, 191, 36, 0.15);
             animation: ringRotate 14s linear infinite;
             pointer-events: none;
         }
@@ -240,20 +254,19 @@
         /* Metallic Glass Outer Ring */
         .avatar-ring {
             position: relative;
-            width: 134px;
-            height: 134px;
+            width: 128px;
+            height: 128px;
             border-radius: 50%;
-            padding: 6px;
+            padding: 5px;
             background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 45%, #f8fafc 70%, #ffffff 100%);
             box-shadow: 
-                0 0 30px rgba(255, 94, 20, 0.45),
-                0 10px 25px rgba(0, 0, 0, 0.5),
+                0 0 25px rgba(34, 158, 217, 0.4),
+                0 8px 20px rgba(0, 0, 0, 0.5),
                 inset 0 2px 4px rgba(255, 255, 255, 0.9),
-                inset 0 -2px 4px rgba(0, 0, 0, 0.4);
+                inset 0 -2px 4px rgba(0, 0, 0, 0.35);
             z-index: 1;
         }
 
-        /* Specular top shine reflection */
         .avatar-ring::before {
             content: '';
             position: absolute;
@@ -264,7 +277,7 @@
             background: linear-gradient(180deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 100%);
             border-radius: 50% 50% 0 0 / 100% 100% 0 0;
             pointer-events: none;
-            z-index: 2;
+            z-index: 4;
         }
 
         .avatar-inner {
@@ -280,26 +293,38 @@
             position: relative;
         }
 
-        /* Bull Horns & TF Monogram Logo */
-        .logo-emblem-svg {
-            width: 82px;
-            height: 82px;
-            fill: #ffffff;
-            filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.4));
+        /* Profile image element (supports ImgBB link) */
+        .avatar-profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+            position: relative;
+            z-index: 2;
         }
 
-        /* Realistic 3D Copper-Gold Verification Badge */
+        .logo-emblem-svg {
+            width: 76px;
+            height: 76px;
+            fill: #ffffff;
+            filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.35));
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Realistic 3D Verification Badge */
         .verified-badge {
             position: absolute;
             bottom: 2px;
             right: 2px;
-            width: 33px;
-            height: 33px;
+            width: 30px;
+            height: 30px;
             border-radius: 50%;
-            background: #080c14;
-            padding: 2.5px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.85);
-            z-index: 3;
+            background: #060b16;
+            padding: 2.2px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.85);
+            z-index: 5;
         }
 
         .verified-badge-inner {
@@ -307,65 +332,87 @@
             height: 100%;
             border-radius: 50%;
             background: radial-gradient(circle at 32% 28%, #f59e0b 0%, #d97706 40%, #92400e 80%, #451a03 100%);
-            border: 0.5px solid rgba(255, 220, 100, 0.6);
+            border: 0.5px solid rgba(255, 220, 100, 0.7);
             box-shadow: 
-                inset 0 1.5px 2px rgba(255, 255, 255, 0.6), 
+                inset 0 1.5px 2px rgba(255, 255, 255, 0.7), 
                 inset 0 -1.5px 2px rgba(0, 0, 0, 0.6),
-                0 0 8px rgba(217, 119, 6, 0.5);
+                0 0 8px rgba(251, 191, 36, 0.6);
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
         .verified-check-svg {
-            width: 14px;
-            height: 14px;
+            width: 13px;
+            height: 13px;
             fill: #1a0f05;
             filter: drop-shadow(0 0.5px 0.5px rgba(255, 255, 255, 0.4));
         }
 
-        /* Brand Headings */
-        .brand-title {
-            font-family: var(--font-heading);
-            font-size: 30px;
+        /* ========================================================
+           SHARP & CLEAN SINGLE-LINE HEADLINE (100% RESPONSIVE)
+           ======================================================== */
+        .brand-headline {
+            font-size: clamp(17px, 5vw, 22px);
             font-weight: 800;
-            color: var(--text-white);
-            letter-spacing: -0.5px;
-            margin-bottom: 4px;
+            color: #ffffff;
+            margin: 0 auto 5px;
             text-align: center;
-            line-height: 1.15;
+            line-height: 1.25;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            letter-spacing: -0.2px;
+        }
+
+        .brand-headline .title-lead {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            color: #f8fafc;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .brand-headline .title-name {
+            font-family: var(--font-gujarati);
+            font-weight: 800;
+            color: var(--gold-primary);
+            text-shadow: 0 0 12px rgba(251, 191, 36, 0.35), 0 2px 6px rgba(0,0,0,0.8);
+            letter-spacing: 0.3px;
         }
 
         .brand-subtitle {
-            font-size: 13px;
+            font-size: 12.5px;
             font-weight: 700;
-            color: var(--accent-orange-light);
-            letter-spacing: 3.5px;
+            color: var(--telegram-light);
+            letter-spacing: 3.2px;
             text-transform: uppercase;
             text-align: center;
-            margin-bottom: 14px;
+            margin-bottom: 12px;
+            text-shadow: 0 0 8px rgba(34, 158, 217, 0.4);
         }
 
-        .orange-divider {
-            width: 44px;
+        .brand-divider {
+            width: 40px;
             height: 2.5px;
-            background: #ea580c;
+            background: linear-gradient(90deg, #fbbf24, #229ED9);
             border-radius: 2px;
-            margin: 0 auto 18px;
+            margin: 0 auto 16px;
         }
 
         /* Description */
         .brand-description {
-            font-size: 14.5px;
-            line-height: 1.62;
+            font-size: 14px;
+            line-height: 1.6;
             color: var(--text-muted);
             text-align: center;
-            max-width: 395px;
-            margin: 0 auto 22px;
+            max-width: 380px;
+            margin: 0 auto 20px;
         }
 
         .brand-description strong {
-            color: var(--accent-orange-light);
+            color: #f8fafc;
             font-weight: 700;
         }
 
@@ -374,14 +421,14 @@
             display: inline-flex;
             align-items: center;
             gap: 7px;
-            background: rgba(255, 94, 20, 0.08);
-            border: 1px solid rgba(255, 94, 20, 0.25);
+            background: rgba(34, 158, 217, 0.08);
+            border: 1px solid rgba(34, 158, 217, 0.25);
             padding: 5px 14px;
             border-radius: 50px;
             font-size: 11.5px;
             font-weight: 600;
-            color: var(--accent-orange-light);
-            margin: 0 auto 22px;
+            color: #7dd3fc;
+            margin: 0 auto 20px;
             text-align: center;
         }
 
@@ -404,8 +451,8 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
-            max-width: 380px;
-            margin: 0 auto 26px;
+            max-width: 360px;
+            margin: 0 auto 24px;
             padding: 0 4px;
         }
 
@@ -416,42 +463,45 @@
 
         .stat-val {
             font-family: var(--font-heading);
-            font-size: 21px;
+            font-size: 20px;
             font-weight: 800;
-            color: var(--accent-orange-light);
+            color: var(--gold-primary);
             line-height: 1.2;
             margin-bottom: 3px;
+            text-shadow: 0 0 8px rgba(251, 191, 36, 0.3);
         }
 
         .stat-lbl {
-            font-size: 11px;
+            font-size: 10.5px;
             font-weight: 700;
             color: var(--text-dim);
-            letter-spacing: 1.6px;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
         }
 
-        /* CTA Button */
+        /* ========================================================
+           OFFICIAL TELEGRAM BUTTON WITH SIGNATURE APP COLOR & RIPPLE ANIMATION
+           ======================================================== */
         .cta-box {
             width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 24px;
+            margin-bottom: 22px;
         }
 
-        .btn-join-channel {
+        .btn-join-telegram {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 12px;
             width: 100%;
-            max-width: 370px;
-            background: rgba(12, 17, 28, 0.95);
-            border: 1.5px solid #ea580c;
-            border-radius: 9px;
-            padding: 16px 22px;
-            color: var(--accent-orange-light);
+            max-width: 360px;
+            background: linear-gradient(135deg, #2AABEE 0%, #229ED9 50%, #0088CC 100%);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            padding: 16px 20px;
+            color: #ffffff;
             font-family: var(--font-heading);
             font-size: 15px;
             font-weight: 800;
@@ -459,47 +509,77 @@
             text-transform: uppercase;
             text-decoration: none;
             cursor: pointer;
-            box-shadow: 0 0 24px rgba(234, 88, 12, 0.3), inset 0 0 10px rgba(234, 88, 12, 0.08);
-            transition: all 0.25s ease-in-out;
+            box-shadow: 
+                0 10px 25px rgba(34, 158, 217, 0.45),
+                0 0 35px rgba(34, 158, 217, 0.3),
+                inset 0 1px 1px rgba(255, 255, 255, 0.4);
+            transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             position: relative;
             overflow: hidden;
+            user-select: none;
         }
 
-        .btn-join-channel::before {
+        .btn-join-telegram::before {
             content: '';
             position: absolute;
             top: -50%;
             left: -50%;
             width: 200%;
             height: 200%;
-            background: linear-gradient(60deg, transparent, rgba(255,255,255,0.12), transparent);
+            background: linear-gradient(60deg, transparent, rgba(255,255,255,0.25), transparent);
             transform: rotate(30deg);
-            animation: btnShimmer 4s infinite;
+            animation: btnShimmer 3.5s infinite;
         }
 
         @keyframes btnShimmer {
             0% { transform: translateX(-100%) rotate(30deg); }
-            40%, 100% { transform: translateX(100%) rotate(30deg); }
+            35%, 100% { transform: translateX(100%) rotate(30deg); }
         }
 
-        .btn-join-channel:hover, .btn-join-channel:active {
-            background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
-            color: #ffffff;
-            box-shadow: 0 0 34px rgba(234, 88, 12, 0.65);
-            transform: translateY(-2px);
-            border-color: #fb923c;
+        .btn-join-telegram:hover {
+            background: linear-gradient(135deg, #3db5f5 0%, #29a4df 50%, #0099e6 100%);
+            box-shadow: 0 12px 35px rgba(34, 158, 217, 0.7), 0 0 45px rgba(42, 171, 238, 0.5);
+            transform: translateY(-2.5px) scale(1.01);
+            border-color: rgba(255, 255, 255, 0.6);
         }
 
-        .btn-join-channel svg {
-            width: 18px;
-            height: 18px;
-            fill: currentColor;
+        .btn-join-telegram:active, .btn-join-telegram.clicking {
+            transform: translateY(1px) scale(0.96);
+            box-shadow: 0 4px 15px rgba(34, 158, 217, 0.6);
+        }
+
+        .btn-join-telegram svg {
+            width: 19px;
+            height: 19px;
+            fill: #ffffff;
+            filter: drop-shadow(0 1px 2px rgba(0,0,0,0.2));
+            transition: transform 0.25s ease;
+        }
+
+        .btn-join-telegram:hover svg {
+            transform: translateX(3px) translateY(-1px) rotate(-8deg);
+        }
+
+        .btn-ripple {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.6);
+            transform: scale(0);
+            animation: rippleAnim 0.6s linear;
+            pointer-events: none;
+        }
+
+        @keyframes rippleAnim {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
         }
 
         .cta-note {
-            font-size: 12px;
+            font-size: 11.5px;
             color: var(--text-dim);
-            margin-top: 10px;
+            margin-top: 9px;
             text-align: center;
         }
 
@@ -507,8 +587,8 @@
         .footer-line {
             width: 100%;
             height: 1px;
-            background: rgba(255, 255, 255, 0.07);
-            margin-bottom: 16px;
+            background: rgba(255, 255, 255, 0.08);
+            margin-bottom: 14px;
         }
 
         /* Legal Navigation Links */
@@ -517,7 +597,7 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            gap: 12px 18px;
+            gap: 10px 16px;
             margin-bottom: 12px;
         }
 
@@ -535,25 +615,25 @@
         }
 
         .legal-btn:hover {
-            color: var(--accent-orange-light);
+            color: var(--telegram-light);
             text-decoration: underline;
         }
 
         .copyright-line {
             font-size: 11px;
-            color: #475569;
+            color: #64748b;
             text-align: center;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .sebi-disclaimer-notice {
             font-size: 10px;
-            color: #475569;
+            color: #64748b;
             text-align: center;
             line-height: 1.45;
-            max-width: 380px;
+            max-width: 360px;
             margin: 0 auto;
-            border-top: 1px solid rgba(255, 255, 255, 0.04);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
             padding-top: 8px;
         }
 
@@ -566,8 +646,10 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: var(--bg-dark);
-            background-image: radial-gradient(circle at 50% 10%, rgba(255, 94, 20, 0.08) 0%, rgba(7, 10, 18, 0) 50%);
+            background: var(--bg-deep);
+            background-image: 
+                radial-gradient(circle at 50% 10%, rgba(34, 158, 217, 0.15) 0%, transparent 60%),
+                linear-gradient(180deg, #070d1a 0%, #0a1426 100%);
             z-index: 9999;
             overflow-y: auto;
             display: none;
@@ -586,22 +668,22 @@
         .legal-inner-wrap {
             max-width: 720px;
             margin: 0 auto;
-            padding: 20px 20px 80px;
+            padding: 20px 18px 80px;
             min-height: 100vh;
         }
 
         .legal-top-bar {
             position: sticky;
             top: 0;
-            background: rgba(7, 10, 18, 0.95);
+            background: rgba(7, 13, 26, 0.96);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            padding: 16px 0;
+            padding: 14px 0;
             display: flex;
             align-items: center;
             justify-content: space-between;
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-            margin-bottom: 24px;
+            margin-bottom: 22px;
             z-index: 100;
         }
 
@@ -610,11 +692,11 @@
             align-items: center;
             gap: 8px;
             background: var(--bg-inner);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            color: var(--accent-orange-light);
+            border: 1px solid rgba(34, 158, 217, 0.3);
+            color: var(--telegram-light);
             font-size: 13px;
             font-weight: 700;
-            padding: 9px 16px;
+            padding: 8px 14px;
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.2s ease;
@@ -622,9 +704,9 @@
         }
 
         .btn-back-nav:hover {
-            background: #ea580c;
+            background: var(--telegram-blue);
             color: #ffffff;
-            border-color: #ea580c;
+            border-color: var(--telegram-blue);
         }
 
         .btn-back-nav svg {
@@ -635,22 +717,22 @@
 
         .legal-bar-heading {
             font-family: var(--font-heading);
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 700;
             color: var(--text-white);
         }
 
         .legal-card-body {
-            background: rgba(12, 17, 28, 0.75);
-            border: 1px solid rgba(255, 255, 255, 0.06);
+            background: rgba(12, 20, 36, 0.88);
+            border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 16px;
-            padding: 30px 24px;
+            padding: 26px 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
         .legal-card-body h1 {
             font-family: var(--font-heading);
-            font-size: 25px;
+            font-size: 23px;
             font-weight: 800;
             color: #ffffff;
             margin-bottom: 6px;
@@ -658,19 +740,19 @@
 
         .legal-card-body .meta-policy-tag {
             font-size: 12px;
-            color: var(--accent-orange-light);
+            color: var(--telegram-light);
             font-weight: 600;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
             display: block;
         }
 
         .legal-card-body h2 {
             font-family: var(--font-heading);
-            font-size: 17px;
+            font-size: 16px;
             font-weight: 700;
             color: #f1f5f9;
-            margin-top: 26px;
-            margin-bottom: 12px;
+            margin-top: 24px;
+            margin-bottom: 10px;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -680,20 +762,20 @@
             content: '';
             display: inline-block;
             width: 4px;
-            height: 16px;
-            background: var(--accent-orange-light);
+            height: 15px;
+            background: var(--telegram-blue);
             border-radius: 2px;
         }
 
         .legal-card-body p, .legal-card-body li {
-            font-size: 14px;
+            font-size: 13.5px;
             color: #94a3b8;
-            line-height: 1.7;
+            line-height: 1.68;
             margin-bottom: 12px;
         }
 
         .legal-card-body ul {
-            padding-left: 20px;
+            padding-left: 18px;
             margin-bottom: 16px;
         }
 
@@ -706,7 +788,7 @@
             border-left: 3px solid #ef4444;
             padding: 14px 16px;
             border-radius: 0 10px 10px 0;
-            margin: 20px 0;
+            margin: 18px 0;
         }
 
         .risk-warning-box p {
@@ -717,11 +799,11 @@
         }
 
         .info-highlight-box {
-            background: rgba(234, 88, 12, 0.08);
-            border-left: 3px solid #ea580c;
+            background: rgba(34, 158, 217, 0.08);
+            border-left: 3px solid var(--telegram-blue);
             padding: 14px 16px;
             border-radius: 0 10px 10px 0;
-            margin: 20px 0;
+            margin: 18px 0;
         }
 
         .info-highlight-box p {
@@ -731,20 +813,20 @@
         }
 
         .contact-info-table {
-            background: #080d16;
+            background: #081122;
             border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 12px;
-            padding: 18px;
+            padding: 16px;
             margin: 16px 0;
         }
 
         .contact-info-row {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
             margin-bottom: 12px;
             color: #e2e8f0;
-            font-size: 14px;
+            font-size: 13.5px;
         }
 
         .contact-info-row:last-child {
@@ -752,7 +834,7 @@
         }
 
         .contact-info-row a {
-            color: var(--accent-orange-light);
+            color: var(--telegram-light);
             text-decoration: none;
             font-weight: 600;
         }
@@ -762,7 +844,7 @@
         }
 
         .legal-bottom-actions {
-            margin-top: 32px;
+            margin-top: 28px;
             display: flex;
             flex-direction: column;
             gap: 14px;
@@ -773,14 +855,14 @@
         .toast-msg {
             position: fixed;
             bottom: 24px;
-            background: rgba(15, 23, 42, 0.95);
-            border: 1px solid var(--accent-orange);
+            background: rgba(12, 20, 36, 0.96);
+            border: 1px solid var(--telegram-blue);
             color: #ffffff;
             font-size: 13px;
             font-weight: 600;
-            padding: 10px 18px;
+            padding: 10px 20px;
             border-radius: 50px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7), 0 0 20px rgba(34, 158, 217, 0.4);
             z-index: 99999;
             transform: translateY(100px);
             opacity: 0;
@@ -795,24 +877,25 @@
 
         @media (max-width: 480px) {
             .landing-card {
-                padding: 30px 18px 24px;
-                border-radius: 16px;
+                padding: 28px 16px 22px;
+                border-radius: 18px;
             }
-            .brand-title {
-                font-size: 26px;
+            .brand-headline {
+                font-size: clamp(16px, 4.8vw, 20px);
+                gap: 6px;
             }
             .brand-subtitle {
                 font-size: 12px;
-                letter-spacing: 3px;
+                letter-spacing: 2.8px;
             }
             .stat-val {
-                font-size: 19px;
+                font-size: 18px;
             }
             .stat-lbl {
                 font-size: 10px;
             }
-            .btn-join-channel {
-                font-size: 14px;
+            .btn-join-telegram {
+                font-size: 14.5px;
                 padding: 15px 16px;
             }
         }
@@ -822,10 +905,10 @@
 <body>
 
     <!-- ========================================================
-         MAIN LANDING CARD (MATCHING SCREENSHOT)
+         MAIN LANDING CARD: LEARNING WITH ગુજરાતી વેપારી
          ======================================================== -->
     <main class="landing-card" id="homeView">
-        <!-- 4 Corner Accents -->
+        <!-- 4 Golden Corner Accents -->
         <div class="corner corner-tl"></div>
         <div class="corner corner-tr"></div>
         <div class="corner corner-bl"></div>
@@ -843,25 +926,34 @@
             </div>
         </header>
 
-        <!-- Center Circular Logo Avatar with Realistic Multi-Layer Glow -->
+        <!-- Center Circular Logo Avatar with Realistic Multi-Layer Glow (Supports ImgBB & Custom Links) -->
         <div class="avatar-wrap">
             <div class="avatar-glow-outer"></div>
             <div class="avatar-glow-ring"></div>
             <div class="avatar-ring">
                 <div class="avatar-inner">
-                    <!-- Stylized Bull Horns & TF Monogram Logo -->
-                    <svg class="logo-emblem-svg" viewBox="0 0 100 100">
-                        <!-- Left Horn sweep -->
+                    <!-- =========================================================================
+                         PROFILE IMAGE SETTING:
+                         Aap niche diye gaye src="" link me apna ImgBB ya koi bhi image link paste kr skte hain.
+                         Example: src="https://i.ibb.co/xxxxxx/your-logo.jpg"
+                         ========================================================================= -->
+                    <img src="" 
+                         alt="Learning With ગુજરાતી વેપારી" 
+                         class="avatar-profile-img" 
+                         id="userProfileImage" 
+                         onerror="this.style.display='none'; document.getElementById('fallbackEmblemSvg').style.display='block';"
+                         onload="this.style.display='block'; document.getElementById('fallbackEmblemSvg').style.display='none';" />
+
+                    <!-- Fallback Bull Horns + Emblem SVG (Shown when no image link is provided) -->
+                    <svg class="logo-emblem-svg" id="fallbackEmblemSvg" viewBox="0 0 100 100">
                         <path d="M 15 24 C 27 26 37 34 41 46 L 34 48 C 29 38 23 31 15 24 Z" />
-                        <!-- Right Horn sweep -->
                         <path d="M 85 24 C 73 26 63 34 59 46 L 66 48 C 71 38 77 31 85 24 Z" />
-                        <!-- Top Crossbar connecting to horns & central TF stem -->
                         <path d="M 28 38 L 72 38 C 69 43 64 46 58 46 L 58 54 L 68 54 C 65 59 61 62 58 62 L 58 84 C 58 86 54 88 50 88 C 46 88 42 86 42 84 L 42 46 L 28 46 C 28 43 28 40 28 38 Z" />
                     </svg>
                 </div>
             </div>
             <!-- Realistic 3D Copper-Gold Verification Badge -->
-            <div class="verified-badge" title="Verified Research Community">
+            <div class="verified-badge" title="Verified Community">
                 <div class="verified-badge-inner">
                     <svg class="verified-check-svg" viewBox="0 0 24 24">
                         <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
@@ -870,14 +962,18 @@
             </div>
         </div>
 
-        <!-- Brand Titles -->
-        <h1 class="brand-title">Trading Floor</h1>
+        <!-- Single-Line Clean & Sharp Headline (Mobile Responsive) -->
+        <h1 class="brand-headline">
+            <span class="title-lead">Learning With</span>
+            <span class="title-name">ગુજરાતી વેપારી</span>
+        </h1>
+        
         <div class="brand-subtitle">INDEX TRADES</div>
-        <div class="orange-divider"></div>
+        <div class="brand-divider"></div>
 
         <!-- Description -->
         <p class="brand-description">
-            Join the official channel of <strong>Trading Floor</strong> for daily market analysis, trade setups & expert insights — delivered straight to you, first and always.
+            Join the official channel of <strong>Learning With ગુજરાતી વેપારી</strong> for daily market analysis, trade setups & expert insights — delivered straight to you, first and always.
         </p>
 
         <!-- Trust Badge: Pure Analysis & Research (Strictly Meta Policy Compliant) -->
@@ -904,14 +1000,14 @@
             </div>
         </div>
 
-        <!-- Main CTA Button with Robust Meta Lead Tracking -->
+        <!-- Official Telegram Button with Telegram Color & Click Animation -->
         <div class="cta-box">
-            <a href="javascript:void(0)" class="btn-join-channel" onclick="handleJoinTelegramLead(event)">
+            <button type="button" class="btn-join-telegram" id="telegramBtn" onclick="handleJoinTelegramAction(event)">
                 <svg viewBox="0 0 24 24">
-                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.75 3.98-1.73 6.64-2.87 7.97-3.44 3.79-1.61 4.58-1.89 5.1-1.9.11 0 .37.03.54.17.14.12.18.28.2.45-.01.07-.01.21-.02.34z"/>
                 </svg>
                 JOIN TELEGRAM CHANNEL
-            </a>
+            </button>
             <div class="cta-note">Tap to join — instant access</div>
         </div>
 
@@ -928,7 +1024,7 @@
 
         <!-- Copyright -->
         <div class="copyright-line">
-            © 2026 Trading Floor. All rights reserved.
+            © 2026 Learning With ગુજરાતી વેપારી. All rights reserved.
         </div>
 
         <!-- SEBI & Meta Policy Compliance Notice -->
@@ -938,7 +1034,7 @@
     </main>
 
     <!-- Toast message for user feedback -->
-    <div class="toast-msg" id="toastBox">Redirecting to Telegram Channel...</div>
+    <div class="toast-msg" id="toastBox">Connecting to Telegram Channel...</div>
 
 
     <!-- ========================================================
@@ -959,7 +1055,7 @@
                 <span class="meta-policy-tag">Last Updated: September 2026 • Compliant with DPDP Act & Meta Ads Policies</span>
 
                 <div class="info-highlight-box">
-                    <p><strong>Overview:</strong> Trading Floor ("we", "us", or "our") is strictly an educational market research community. We do not sell, rent, or monetize your personal data. This policy details how information is handled when you visit our website or access our educational resources.</p>
+                    <p><strong>Overview:</strong> Learning With ગુજરાતી વેપારી ("we", "us", or "our") is strictly an educational market research community. We do not sell, rent, or monetize your personal data. This policy details how information is handled when you visit our website or access our educational resources.</p>
                 </div>
 
                 <h2>1. Information We Collect</h2>
@@ -993,7 +1089,7 @@
                 <div class="contact-info-table">
                     <div class="contact-info-row">
                         <span>📧 Email:</span>
-                        <a href="mailto:support@tradingfloor.academy">support@tradingfloor.academy</a>
+                        <a href="mailto:support@gujaratrader.com">support@gujaratrader.com</a>
                     </div>
                     <div class="contact-info-row">
                         <span>💬 Telegram Support:</span>
@@ -1030,7 +1126,7 @@
                 <span class="meta-policy-tag">Effective Date: September 2026 • Platform Terms of Service</span>
 
                 <div class="info-highlight-box">
-                    <p><strong>Pure Market Research & Education:</strong> Trading Floor is dedicated exclusively to technical chart analysis, price action studies, and risk management principles. We do not sell signals, tips, or investment plans.</p>
+                    <p><strong>Pure Market Research & Education:</strong> Learning With ગુજરાતી વેપારી is dedicated exclusively to technical chart analysis, price action studies, and risk management principles. We do not sell signals, tips, or investment plans.</p>
                 </div>
 
                 <h2>1. Nature of Service (100% Educational)</h2>
@@ -1041,13 +1137,13 @@
                 </ul>
 
                 <h2>2. No Financial Advisory or Broker Relationship</h2>
-                <p>Trading Floor and its community creators are not registered as Investment Advisers or Research Analysts under SEBI regulations. Users are urged to consult certified financial advisers before making live trading decisions.</p>
+                <p>Learning With ગુજરાતી વેપારી and its community creators are not registered as Investment Advisers or Research Analysts under SEBI regulations. Users are urged to consult certified financial advisers before making live trading decisions.</p>
 
                 <h2>3. User Responsibility & Market Risk</h2>
-                <p>Trading in financial instruments involves significant risk of capital loss. You are solely responsible for your own trading actions and financial decisions. Trading Floor assumes zero liability for your gains or losses.</p>
+                <p>Trading in financial instruments involves significant risk of capital loss. You are solely responsible for your own trading actions and financial decisions. Learning With ગુજરાતી વેપારી assumes zero liability for your gains or losses.</p>
 
                 <h2>4. Intellectual Property</h2>
-                <p>All branding, logos, graphics, and study materials are the intellectual property of Trading Floor and protected under applicable copyright laws.</p>
+                <p>All branding, logos, graphics, and study materials are the intellectual property of Learning With ગુજરાતી વેપારી and protected under applicable copyright laws.</p>
 
                 <div class="legal-bottom-actions">
                     <button type="button" class="btn-back-nav" onclick="closeLegalPage()">
@@ -1085,7 +1181,7 @@
                 </div>
 
                 <h2>1. Non-SEBI Registered Entity Disclosure</h2>
-                <p><strong>Trading Floor</strong> is an educational platform. The administrators, creators, and analysts of this community are <strong>NOT</strong> SEBI registered Research Analysts or SEBI registered Investment Advisers under SEBI regulations.</p>
+                <p><strong>Learning With ગુજરાતી વેપારી</strong> is an educational platform. The administrators, creators, and analysts of this community are <strong>NOT</strong> SEBI registered Research Analysts or SEBI registered Investment Advisers under SEBI regulations.</p>
 
                 <h2>2. No Tips, Signals or Paid Services</h2>
                 <p>In accordance with Meta Advertising Guidelines and Indian financial regulations:</p>
@@ -1099,7 +1195,7 @@
                 <p>Before executing any trade in equities, futures, or options, always consult a certified, SEBI-registered financial planner to understand your risk capacity.</p>
 
                 <h2>4. Limitation of Liability</h2>
-                <p>Trading Floor and its associated personnel explicitly disclaim all liability for any direct or consequential financial loss resulting from the use of educational materials published across our channels.</p>
+                <p>Learning With ગુજરાતી વેપારી and its associated personnel explicitly disclaim all liability for any direct or consequential financial loss resulting from the use of educational materials published across our channels.</p>
 
                 <div class="legal-bottom-actions">
                     <button type="button" class="btn-back-nav" onclick="closeLegalPage()">
@@ -1137,7 +1233,7 @@
                 <div class="contact-info-table">
                     <div class="contact-info-row">
                         <span>📧 Email Support:</span>
-                        <a href="mailto:support@tradingfloor.academy" onclick="trackSupportClick('Email')">support@tradingfloor.academy</a>
+                        <a href="mailto:support@gujaratrader.com" onclick="trackSupportClick('Email')">support@gujaratrader.com</a>
                     </div>
                     <div class="contact-info-row">
                         <span>💬 Telegram Support Bot:</span>
@@ -1145,7 +1241,7 @@
                     </div>
                     <div class="contact-info-row">
                         <span>🚀 Official Telegram Channel:</span>
-                        <a href="https://t.me/+Qpxg4nO9pQ01MzE1" target="_blank" onclick="handleJoinTelegramLead(event)">Join Trading Floor Index Trades</a>
+                        <a href="https://t.me/+Qpxg4nO9pQ01MzE1" target="_blank" onclick="handleJoinTelegramAction(event)">Join Learning With ગુજરાતી વેપારી</a>
                     </div>
                     <div class="contact-info-row">
                         <span>⏱️ Operating Hours:</span>
@@ -1159,7 +1255,7 @@
 
                 <h2>Frequently Asked Questions</h2>
                 <p><strong>Q: Do you offer paid tip packages, signals, or account handling?</strong><br>
-                <strong style="color: #ef4444;">No, strictly NO.</strong> Trading Floor is 100% free technical research and educational analysis. We never ask for payments, funds, or Demat credentials.</p>
+                <strong style="color: #ef4444;">No, strictly NO.</strong> Learning With ગુજરાતી વેપારી is 100% free technical research and educational analysis. We never ask for payments, funds, or Demat credentials.</p>
 
                 <p><strong>Q: Is joining the Telegram community free?</strong><br>
                 Yes, our market research studies and setups are completely free for all community learners.</p>
@@ -1176,10 +1272,20 @@
 
 
     <!-- ========================================================
-         SCRIPTS: ENHANCED META PIXEL TRACKING & REDIRECT SYSTEM
+         SCRIPTS: ENHANCED META PIXEL TRACKING & BUTTON RIPPLE
          ======================================================== -->
     <script>
         const TELEGRAM_LINK = "https://t.me/+Qpxg4nO9pQ01MzE1";
+
+        // Auto-check profile image: if empty src, fallback to SVG
+        window.addEventListener('DOMContentLoaded', function() {
+            const imgEl = document.getElementById('userProfileImage');
+            const svgEl = document.getElementById('fallbackEmblemSvg');
+            if (imgEl && (!imgEl.getAttribute('src') || imgEl.getAttribute('src').trim() === '')) {
+                imgEl.style.display = 'none';
+                if (svgEl) svgEl.style.display = 'block';
+            }
+        });
 
         // Capture UTM Parameters & Ad Source
         function getQueryParams() {
@@ -1194,7 +1300,6 @@
             return params;
         }
 
-        // Store UTM data in session for ad attribution
         const urlParams = getQueryParams();
         if (Object.keys(urlParams).length > 0) {
             try {
@@ -1212,35 +1317,58 @@
             }
         }
 
-        // BULLETPROOF META LEAD TRACKING WITH SAFARI/INSTAGRAM AD IN-APP DELAY
-        function handleJoinTelegramLead(event) {
-            if (event) event.preventDefault();
+        // TELEGRAM BUTTON CLICK: RIPPLE EFFECT + META LEAD TRACKING + REDIRECT
+        function handleJoinTelegramAction(event) {
+            const btn = document.getElementById('telegramBtn');
 
-            // 1. Fire Standard Meta Pixel "Lead" Event
+            // 1. Create Dynamic Click Ripple Animation
+            if (btn && event) {
+                const rect = btn.getBoundingClientRect();
+                const circle = document.createElement('span');
+                const diameter = Math.max(rect.width, rect.height);
+                const radius = diameter / 2;
+
+                const clientX = event.clientX || (rect.left + rect.width / 2);
+                const clientY = event.clientY || (rect.top + rect.height / 2);
+
+                circle.style.width = circle.style.height = `${diameter}px`;
+                circle.style.left = `${clientX - rect.left - radius}px`;
+                circle.style.top = `${clientY - rect.top - radius}px`;
+                circle.classList.add('btn-ripple');
+
+                const existingRipple = btn.getElementsByClassName('btn-ripple')[0];
+                if (existingRipple) {
+                    existingRipple.remove();
+                }
+
+                btn.appendChild(circle);
+                btn.classList.add('clicking');
+                setTimeout(() => btn.classList.remove('clicking'), 250);
+            }
+
+            // 2. Fire Standard Meta Pixel "Lead" Event
             if (typeof fbq === 'function') {
                 fbq('track', 'Lead', {
                     content_name: 'Telegram Channel Join',
-                    content_category: 'Stock Market Education & Research',
+                    content_category: 'Learning With Gujarati Vepari',
                     value: 1.0,
                     currency: 'INR',
                     ad_source: urlParams.utm_source || 'meta_ads',
                     campaign: urlParams.utm_campaign || 'direct'
                 });
 
-                // 2. Fire Custom Event for Enhanced Conversion Auditing
                 fbq('trackCustom', 'TelegramJoinInitiated', {
-                    channel: 'Trading Floor',
+                    channel: 'Learning With Gujarati Vepari',
                     timestamp: new Date().toISOString()
                 });
             }
 
-            // Show Toast & Redirect with 180ms safety delay (ensures Pixel payload flushes on mobile browsers)
+            // 3. Show Toast & Safe Redirect
             showToast("Connecting to Telegram...");
             
             setTimeout(() => {
-                // Open Telegram in new window/app
                 window.location.href = TELEGRAM_LINK;
-            }, 180);
+            }, 200);
         }
 
         // Track Contact / Support Clicks
@@ -1265,7 +1393,6 @@
                 target.scrollTo(0, 0);
                 window.location.hash = pageId;
 
-                // Track Legal Page View
                 if (typeof fbq === 'function') {
                     fbq('trackCustom', 'LegalPageView', { page: pageId });
                 }
